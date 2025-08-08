@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  margin: 0; padding: 1rem;
+}
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.mode-toggle button {
+  background: #ddd;
+  border: none;
+  padding: .5rem 1rem;
+  margin: 0 .25rem;
+  cursor: pointer;
+}
+.mode-toggle button.active {
+  background: #333;
+  color: #fff;
+}
+#generateBtn {
+  display: block;
+  margin: 1rem auto;
+  padding: .75rem 2rem;
+  background: #217993;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#generatedSubmission {
+  white-space: pre-wrap;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
