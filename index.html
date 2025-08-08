@@ -222,5 +222,26 @@
     </div>
 
     <script src="app.js"></script>
+    <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+<script>
+  // Your Firebase config
+  const firebaseConfig = {
+        apiKey: "AIzaSyAP_R6ErJncD5qIJ_Po4R9StmGe41iR41k",
+        authDomain: "pdasubmissiongenerator2025.firebaseapp.com",
+        projectId: "pdasubmissiongenerator2025",
+        storageBucket: "pdasubmissiongenerator2025.firebasestorage.app",
+        messagingSenderId: "684198543170",
+        databaseURL: "https://pdasubmissiongenerator2025-default-rtdb.asia-southeast1.firebasedatabase.app/",
+        
+        appId: "1:684198543170:web:5001bd98986de480b912db",
+        measurementId: "G-FF1W7VCVFR"
+
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+</script>
+
 </body>
 </html>

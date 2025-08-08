@@ -8,13 +8,14 @@ const API_CONFIG = {
     keys: [
         {
             provider: 'groq',
-            apiKey: 'Ygsk_1mmi94ZaWqnAA1ySqj9cWGdyb3FYbmM0rnlvjb1LYQp6Wi8uJoBe',
+            apiKey: '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',
             name: 'Groq (Primary)',
             active: true
         },
         {
-            provider: 'openrouter',
-            apiKey: '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',
+            provider: 'openrouter', 
+            // apiKey: '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',
+            apiKey: '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',
             name: 'OpenRouter AI',
             active: true
         },
@@ -379,6 +380,11 @@ function updateCharacterCount() {
 // Form submission and LLM integration with fallback
 async function handleFormSubmit(e) {
     e.preventDefault();
+  const countRef = db.ref('submissions/count');
+  await countRef.transaction(current => (current || 0) + 1);
+  const snap = await countRef.get();
+  const total = snap.val();
+  document.getElementById('generationInfo').textContent = `Total submissions so far: ${total}`;
 
     if (!validateForm()) return;
 
