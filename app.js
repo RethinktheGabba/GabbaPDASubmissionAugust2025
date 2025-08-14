@@ -8,7 +8,7 @@ const API_CONFIG = {
     keys: [
         {
             provider: 'groq',
-            apiKey: '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',
+            apiKey: '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',
             name: 'Groq (Primary)',
             active: true
         },
@@ -21,13 +21,13 @@ const API_CONFIG = {
         },
         {
             provider: 'groq',
-            apiKey: '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', 
+            apiKey: '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', 
             name: 'Groq (Backup)',
             active: true
         },
         {
             provider: 'google',
-            apiKey: 'YAIzaSyAZw6MQex9Ks3wgHC4tQeNwuJKA6HKkUJc',
+            apiKey: 'AIzaSyDpT8TkvWsGvgZt6IpoBSXMBUVl_YJMnkw',
             name: 'Google AI Studio',
             active: true
         }
